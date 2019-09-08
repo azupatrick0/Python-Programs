@@ -1,3 +1,4 @@
+# This function returns true if a given word is an isogram or false otherwise
 def is_isogram(word):
     count = 0
     if not isinstance(word, str):

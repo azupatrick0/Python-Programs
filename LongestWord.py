@@ -1,4 +1,4 @@
-
+# This function returns the longest string in a sentence
 def longest_string(string):
     current_longest_string = ''
     longest_string = ''
