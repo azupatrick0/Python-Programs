@@ -1,11 +1,13 @@
-def my_sort(list_of_number):
-    list_of_number_one = list(list_of_number)
-    sorted_list = sorted(list_of_number_one)
-    list_of_number_two = []
-    for i in sorted_list:
-        if i %  2 == 1:
-            list_of_number_two.append(i)
-    for k in sorted_list:
-        if k % 2 == 0:
-              list_of_number_two.append(k)
-    return list_of_number_two
+# This function sorts a list of a numbers, odd numbers first then even numbers
+def sort_list(list_of_numbers):
+    try:
+        result = []
+        for odd_number in sorted(list(list_of_numbers)):
+            if odd_number % 2 == 1:
+                result.append(odd_number)
+        for even_number in sorted(list(list_of_numbers)):
+            if even_number % 2 == 0:
+                result.append(even_number)
+        return result
+    except TypeError:
+        print('Input should be a list of numbers')
